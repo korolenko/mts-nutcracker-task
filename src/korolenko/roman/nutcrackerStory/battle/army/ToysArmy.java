@@ -1,6 +1,6 @@
-package korolenko.roman.nutcrackerStory.buttle.army;
+package korolenko.roman.nutcrackerStory.battle.army;
 
-import korolenko.roman.nutcrackerStory.buttle.OrderResult;
+import korolenko.roman.nutcrackerStory.battle.OrderResult;
 import korolenko.roman.nutcrackerStory.characters.FantasticCreature;
 
 

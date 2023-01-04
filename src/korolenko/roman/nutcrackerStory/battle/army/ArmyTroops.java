@@ -1,9 +1,9 @@
-package korolenko.roman.nutcrackerStory.buttle.army;
+package korolenko.roman.nutcrackerStory.battle.army;
 
-import korolenko.roman.nutcrackerStory.buttle.OrderResult;
+import korolenko.roman.nutcrackerStory.battle.OrderResult;
 
-import static korolenko.roman.nutcrackerStory.buttle.army.Orders.READY_TO_FIGHT;
-import static korolenko.roman.nutcrackerStory.buttle.army.Orders.REFUSAL_TO_FIGHT;
+import static korolenko.roman.nutcrackerStory.battle.army.Orders.READY_TO_FIGHT;
+import static korolenko.roman.nutcrackerStory.battle.army.Orders.REFUSAL_TO_FIGHT;
 
 public class ArmyTroops extends ArmyUnit {
     private Uniform uniform;

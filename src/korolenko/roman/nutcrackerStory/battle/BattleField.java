@@ -1,17 +1,17 @@
-package korolenko.roman.nutcrackerStory.buttle;
+package korolenko.roman.nutcrackerStory.battle;
 
 import korolenko.roman.nutcrackerStory.NoiseVolumes;
-import korolenko.roman.nutcrackerStory.buttle.army.Army;
+import korolenko.roman.nutcrackerStory.battle.army.Army;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ButtleField {
+public class BattleField {
     private List<Army> enemies;
     private Location location;
     private NoiseVolumes volume;
 
-    public ButtleField(){
+    public BattleField(){
         this.enemies = new ArrayList<>();
     }
 
@@ -20,29 +20,29 @@ public class ButtleField {
     }
 
     public static Builder newBuilder() {
-        return new ButtleField().new Builder();
+        return new BattleField().new Builder();
     }
 
     public class Builder{
         private Builder(){}
 
         public Builder addArmy(Army army){
-            ButtleField.this.enemies.add(army);
+            BattleField.this.enemies.add(army);
             return this;
         }
 
         public Builder addVolume(NoiseVolumes volume){
-            ButtleField.this.volume = volume;
+            BattleField.this.volume = volume;
             return this;
         }
 
         public Builder addLocation(Location location){
-            ButtleField.this.location = location;
+            BattleField.this.location = location;
             return this;
         }
 
-        public ButtleField build(){
-            return ButtleField.this;
+        public BattleField build(){
+            return BattleField.this;
         }
     }
 }

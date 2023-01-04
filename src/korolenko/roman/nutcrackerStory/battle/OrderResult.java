@@ -1,4 +1,4 @@
-package korolenko.roman.nutcrackerStory.buttle;
+package korolenko.roman.nutcrackerStory.battle;
 
 public enum OrderResult {
     UNFADING_GLORY,

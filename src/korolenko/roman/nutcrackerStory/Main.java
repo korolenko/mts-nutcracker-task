@@ -1,12 +1,12 @@
 package korolenko.roman.nutcrackerStory;
 
-import korolenko.roman.nutcrackerStory.buttle.*;
-import korolenko.roman.nutcrackerStory.buttle.army.*;
+import korolenko.roman.nutcrackerStory.battle.*;
+import korolenko.roman.nutcrackerStory.battle.army.*;
 import korolenko.roman.nutcrackerStory.characters.Doll;
 
 import static korolenko.roman.nutcrackerStory.NoiseVolumes.*;
-import static korolenko.roman.nutcrackerStory.buttle.OrderResult.*;
-import static korolenko.roman.nutcrackerStory.buttle.army.Orders.*;
+import static korolenko.roman.nutcrackerStory.battle.OrderResult.*;
+import static korolenko.roman.nutcrackerStory.battle.army.Orders.*;
 
 class Reader{
     private String name;
@@ -62,14 +62,14 @@ public class Main {
         Location room = new Location("room");
         room.addObject("bench");
 
-        ButtleField buttleField = ButtleField.newBuilder()
+        BattleField battleField = BattleField.newBuilder()
                 .addLocation(room)
                 .addArmy(toys)
                 .addArmy(mouseArmy)
                 .addVolume(NoiseVolumes.BATTLE)
                 .build();
 
-        reader.imagine(buttleField.getNoise());
+        reader.imagine(battleField.getNoise());
         reader.imagine(nutCracker.getVolume());
         reader.imagine(mouseKing.getVolume());
 

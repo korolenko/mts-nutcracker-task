@@ -1,7 +1,7 @@
-package korolenko.roman.nutcrackerStory.buttle.army;
+package korolenko.roman.nutcrackerStory.battle.army;
 
-import korolenko.roman.nutcrackerStory.buttle.OrderResult;
-import korolenko.roman.nutcrackerStory.buttle.FightResulter;
+import korolenko.roman.nutcrackerStory.battle.OrderResult;
+import korolenko.roman.nutcrackerStory.battle.FightResulter;
 
 public abstract class ArmyUnit implements Controllable {
     String name;
@@ -17,7 +17,7 @@ public abstract class ArmyUnit implements Controllable {
     }
 
     @Override
-    public OrderResult executeOrder(korolenko.roman.nutcrackerStory.buttle.army.Orders order) {
+    public OrderResult executeOrder(korolenko.roman.nutcrackerStory.battle.army.Orders order) {
         OrderResult result =  FightResulter.getResult(this.getName(), order);
         System.out.println(String.format("%s doing %s and the result is %s", this.getName(), order, result));
         return result;

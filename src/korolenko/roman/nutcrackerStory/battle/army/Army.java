@@ -1,4 +1,4 @@
-package korolenko.roman.nutcrackerStory.buttle.army;
+package korolenko.roman.nutcrackerStory.battle.army;
 
 import korolenko.roman.nutcrackerStory.characters.FantasticCreature;
 

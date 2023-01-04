@@ -1,9 +1,9 @@
-package korolenko.roman.nutcrackerStory.buttle;
+package korolenko.roman.nutcrackerStory.battle;
 
 import korolenko.roman.nutcrackerStory.NoiseVolumes;
-import korolenko.roman.nutcrackerStory.buttle.army.CapableOfCommanding;
-import korolenko.roman.nutcrackerStory.buttle.army.Controllable;
-import korolenko.roman.nutcrackerStory.buttle.army.Orders;
+import korolenko.roman.nutcrackerStory.battle.army.CapableOfCommanding;
+import korolenko.roman.nutcrackerStory.battle.army.Controllable;
+import korolenko.roman.nutcrackerStory.battle.army.Orders;
 import korolenko.roman.nutcrackerStory.characters.FantasticCreature;
 
 public class Commander extends FantasticCreature implements Controllable, CapableOfCommanding {
@@ -12,7 +12,7 @@ public class Commander extends FantasticCreature implements Controllable, Capabl
     }
 
     @Override
-    public OrderResult executeOrder(korolenko.roman.nutcrackerStory.buttle.army.Orders order) {
+    public OrderResult executeOrder(korolenko.roman.nutcrackerStory.battle.army.Orders order) {
         OrderResult result =  FightResulter.getResult(this.getName(), order);
         System.out.println(String.format("%s doing %s and the result is %s", this.getName(), order, result));
         return result;
